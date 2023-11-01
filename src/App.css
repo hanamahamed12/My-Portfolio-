@@ -1,0 +1,490 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+  box-sizing: border-box;
+}
+body{
+  background-color:#0c192c;
+  color: white;
+}
+
+/* BACKGROUND ANIMATION
+.container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bubbles{
+  position: relative;
+  display: flex;
+}
+
+.bubbles span{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #4fc3dc;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc44,
+  0 0 50px #4fc3dc,
+  0 0 100px #4fc3dc;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even){
+  background: #ff2d75;
+  box-shadow: 0 0 0 10px #ff2d7544,
+  0 0 50px #ff2d75,
+  0 0 100px #ff2d75;
+
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(100vh) scale(0);
+  }
+  100%{
+    transform: translateY(-10vh) scale(1);
+  }
+} */
+.header{
+ display: flex;
+ justify-content: space-between;
+ margin: 0px 10%;
+ margin-top: 75px;
+} 
+ .header ul{
+  display: flex;
+  padding: 20px;
+}
+.header li{
+  padding-left: 25px;
+  list-style: none;
+}
+.header a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}  
+
+.header a:hover{
+  color: skyblue;
+  text-decoration-line:line-through;
+}
+/* .container{
+  animation: 2s animo;
+} */
+
+
+.detail{
+  margin:  5% 17%;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2.9rem;
+  margin-bottom: 15px;
+}
+
+.bio p{
+  line-height: 2rem;
+  font-size: 1.1rem;
+  font-style: normal;
+}
+
+.bio a{
+  /* font-weight: bold; */
+  text-decoration: underline;
+  color: blue;
+}
+
+.bio a:hover{
+  text-decoration-line: line-through;
+  color: white;
+}
+
+.start{
+  margin:  5% 17%;
+}
+#go{
+  font-size:17px
+}
+#go span{
+  font-weight: bolder;
+   font-size: 18px;
+}
+#hit{
+font-size:3rem;
+ margin-bottom: 15px;
+} 
+
+form{
+  margin: 40px 0px;
+}
+
+form input{
+  margin-bottom: 25px;
+  padding: 12px;
+  width: 60%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: rgb(228, 226, 226);
+  font-size: 17px;
+}
+
+form textarea{
+  width: 60%;
+  height: 180px;
+  background-color: rgb(228, 226, 226);
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 17px;
+}
+form button{
+  margin-top: 20px;
+  border: none;
+  padding: 14px;
+  width: 20%;
+  border-radius: 6px;
+  font-size: 17px;
+}
+
+.homey {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.homey:hover{
+  text-decoration-line: line-through;
+}
+
+
+.thing{
+  margin:  4% 17%;
+}
+
+.idk article{
+  line-height: 1.5rem;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.idk h1{
+  margin-bottom: 10px;
+}
+
+.idk ul{
+  list-style: none;
+}
+
+#titat{
+  font-size: 3rem;
+}
+
+
+
+.izo{
+  margin:  5% 17%;
+}
+/* socail media Links */
+
+.social{
+ display: flex;
+ gap: 6%;
+ margin-top: -10px;
+}
+.social a{
+  color: rgb(182, 233, 226);
+}
+
+.social a:hover{
+  color: ghostwhite;
+}
+
+.proj{
+  margin-top: 60px;
+  display: flex;
+}
+
+img {
+  width: 550px;
+  border-radius: 5px;
+}
+
+.hello{
+  margin: auto;
+  justify-content: center;
+  justify-items: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.box button{
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(182, 215, 243);
+  margin: 20px;
+}
+
+.box button a{
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+ 
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 900px){
+  /* HOME */
+  .detail{
+
+  }
+  .title{
+    font-size: 2rem;
+  }
+  .bio p{
+    font-size: 0.98rem;
+  }
+
+  /* About */
+  .thing h1{
+    font-size: 1.1rem;
+  }
+  .idk p{
+    font-size: 0.97rem;
+  }
+  #titat{
+    font-size: 2rem;
+  }
+
+  /* Contact */
+  #hit{
+    font-size: 2.1rem;
+  }
+
+  form{
+    margin: 40px 0px;
+  }
+  form input{
+  margin-bottom: 15px;
+  padding: 12px;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: rgb(228, 226, 226);
+  font-size: 15px;
+}
+
+form textarea{
+  width: 70%;
+  height: 170px;
+  background-color: rgb(228, 226, 226);
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+form button{
+  margin-top: 20px;
+  border: none;
+  padding: 10px;
+  width: 20%;
+  border-radius: 6px;
+  font-size: 17px;
+}
+
+#go{
+  font-size: 15px;
+}
+#go span{
+  font-size: 16px;
+}
+/* Header  */
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10%;
+  margin-top: 75px;
+ } 
+  .header ul{
+   display: flex;
+   padding: 20px;
+ }
+ .header li{
+   padding-left: 25px;
+   list-style: none;
+ }
+ .header a{
+   text-decoration: none;
+   color: white;
+   font-size: 16px;
+ } 
+}
+
+
+@media screen and (max-width: 390px){
+
+  /* Header  */
+  .header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10%;
+    margin-top: 75px;
+   } 
+    .header ul{
+     display: flex;
+     padding: 20px;
+   }
+   .header li{
+     padding-left: 25px;
+     list-style: none;
+   }
+   .header a{
+     text-decoration: none;
+     color: white;
+     font-size: 14px;
+   } 
+
+    /* HOME */
+    .detail{
+      
+
+    }
+    .title{
+      margin-top: 40px;
+      font-size: 1.1rem;
+    }
+    .bio p{
+      font-size: 0.88rem;
+    }
+   .homey{
+    font-size: 15px;
+   }
+
+    /* Footer */
+
+    .social {
+      margin-top:  10px;
+    }
+
+    /* About */
+    #titat{
+      font-size: 1.4rem;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+    .thing h1{
+      font-size: 0.98rem;
+    }
+    .idk p{
+      font-size: 0.95rem;
+    }
+    
+    /* footer  */
+    .social {
+      margin-top:  30px;
+    }
+  
+
+
+    /* Contact */
+  #hit{
+    font-size: 1.4rem;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  form{
+    margin: 40px 0px;
+  }
+  form input{
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: rgb(228, 226, 226);
+  font-size: 15px;
+}
+
+form textarea{
+  width: 100%;
+  height: 170px;
+  background-color: rgb(228, 226, 226);
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+form button{
+  margin-top: 20px;
+  border: none;
+  padding: 8px;
+  width: 20%;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+#go{
+  font-size: 13px;
+}
+#go span{
+  font-size: 14px;
+}
+/* Projects */
+.proj{
+  margin-top: 40px;
+  display: flex;
+}
+
+img {
+  width: 290px;
+  border-radius: 5px;
+}
+
+
+.hello{
+  margin: auto;
+  justify-content: center;
+  justify-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+ 
+
+}
+
+.box button{
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: rgb(182, 215, 243);
+  margin: 20px;
+}
+
+.box button a{
+  text-decoration: none;
+  font-size: 11px;
+  color: black;
+}
+
+.izo h1{
+  font-size: 1.4rem;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+}
